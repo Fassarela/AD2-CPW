@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcelanatos</title>
+</head>
+<body>
+    
+</body>
+</html>
+<style>
+    .linha {
+    width: 400px;
+    border-bottom: 3px solid #402020; 
+    margin-bottom: 6px; 
+    padding-bottom: 15px; 
+     }
+    .texto-colorido {
+        color: #CC0000; 
+    }
+    table {
+        width: 480px;
+        border-collapse: collapse;
+        margin-top: 6px;
+        color: #000000;
+        background-color: #EEDDCC;
+        font-family: "Karla", sans-serif;
+        font-size: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    tr:nth-child(odd) {
+        background-color: #DDDDDD; 
+    }
+
+    th {
+        padding: 6px 12px;
+        border: 2px solid #888888;
+        background-color: #884444;
+        text-align: middle;
+        color: #FFFFFF;
+    }
+    .titulo-dentro {
+        color: #FFFFFF;
+        vertical-align: middle; 
+        background-color: #442222;
+    } 
+    td {
+        padding: 6px 12px 6px 12px;
+        border: 2px solid #000066;
+        background-color: #EEDDCC;
+        vertical-align: middle;
+        font-weight: normal;
+
+    }
+    .coluna-imagem {
+        background-color: #FFFFFF;
+    }
+    ul {
+    line-height: 200%; 
+}
+    a {
+    text-decoration: none; 
+}
+    .texto-direita-topo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 140%;
+        text-align: right;
+        font: size 14px;
+        font-family: Karla;
+        width: 300px;
+        border: 1px solid #BBAA99;   
+        float: right;
+    }
+    .excecao1 {
+        text-align: center;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        font: size 16px;;
+        font-family: stoke
+    }
+    body {
+        color: #7711CC;
+        background-color: #BBAA99;
+   }
+    a:link {
+        color: #7711CC;
+    }
+    a:visited {
+        color: #8822DD; 
+    }
+    .case {
+        border: 2px solid #888888;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+        z-index: 0;
+        border: none;
+    }
+    .case img {
+        width: 240px;
+        height: 375px;
+        display: none;
+    }
+    .cont {
+        border: none;
+        width: 240px;
+        background-color: #FFFFFF;
+    }
+    .grd {
+        height: 80px;
+    }
+</style>
+</head>
+<body>
+<section>
+    <div class="linha">
+<h1><img src="RefrescaPeTopo.png" alt="RefrescaPeTopo" width="410" height="60">
+</h1>
+    </div>
+<table style="border-collapse: collapse;">
+</section>
+<section>
+    <div class="texto-direita-topo"> 
+    Rua da Olaria,3ºpiso</br>
+    Tel: (21)98811-2244</br>
+   <a href="contato@refrescape.com.br">
+        contato@refrescape.com.br</a>
+    </address>
+    </div>
+</section>
+<section>
+    <nav font-family: Karla ; margin-top: 50px; color:  #332277; line-height: 230% margin-top: 40px; font-size: 16px;>
+    <ul type="square">
+        <div class="texto.direta-topo excecao2">
+            <li><a href="RefrecaPePisoFrio.html">Apresentação</a></li>
+            <li><a href="Porcelanatos.html">Porcelanatos</a></li>
+            <li><a href="Complementos.html">Complementos</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+        </div>
+    </nav>
+</section>
+    <section>
+        <table>
+            <tr>
+                <th colspan="5" class="titulo-dentro">Porcelanatos</th>
+            </tr>
+            <tr>
+                <th>Marca</th>
+                <th>Tipo</th>
+                <th colspan="3">Descrição</th> 
+            </tr>
+            <tr>
+                <th class="titulo-dentro">Portinari</th>
+                <td class="grd"><a href="javascript:show('primeiro')">Cimentício Bege</a></td> 
+                <td id="ponto" class="cont" colspan="3"></td>
+                <td class="case" rowspan="4">
+                    <img id="case" src="ad2-png/vazio_150.png" alt="">
+                </td> 
+            </tr>
+            <tr>
+                <th rowspan="2" class="titulo-dentro">Biancogres</th>
+                <td class="grd"><a href="javascript:show('segundo')">Decorado</a></td>
+                <td id="img" class="cont" rowspan="2"></td> 
+            </tr>
+            <tr>
+                <td class="grd"><a href="javascript:show('terceiro')">Marmorizado</a></td>
+            </tr>
+            <tr>
+                <th class="titulo-dentro">Eliane</th>
+                <td class="grd"><a href="javascript:show('quarto')">Amadeirado Nogueira</a></td> 
+                <td id="preco" class="cont"></td>
+            </tr>
+        </table>
+    </section>
+    <script src="Porcelanatos.js"></script>
+</body>
+</html>
