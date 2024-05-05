@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complementos</title>
+ <style>
+        .texto-colorido {
+        color:  #CC0000; 
+        }
+        .quadrado {
+        width: 340px;
+        background-color: #EEDDCC;
+        padding: 10px 10px 10px 50px;
+        border: 2px solid #000000;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #000000;
+        font-family: karla;
+        font-size: 16px;
+        
+        }
+        h2 {
+            text-align: center;
+            color: #7711CC;
+            font-family: karla;
+        }
+        ul {
+        line-height: 200%; 
+        }
+        a {
+        text-decoration: none; 
+        }
+        .texto-direita-topo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: 140%;
+            text-align: right;
+            font: size 14px;
+            font-family: Karla;
+            width: 300px;
+            border: 1px solid #BBAA99;   
+            float: right;
+        }
+        body {
+	        color: #7711CC;
+	        background-color: #BBAA99;
+        }
+        a:link {
+            color: #7711CC;
+        }
+        a:visited {
+            color: #8822DD; 
+        }
+        .caixa {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 270px;
+        padding: 10px;
+        background-color: #BBAA99;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .caixa-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        }
+        .caixa-img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        }
+        .letra { 
+            font-size: 16px;
+        }
+ </style>
+</head>
+<body>
+    <section>
+    <h1><img src="RefrescaPeTopo.png" alt="RefrescaPeTopo" width="410" height="60">
+    </h1>
+</section>
+    <table style="border-collapse: collapse;">
+        <tr>
+            <td style="border-bottom: 3px solid #402020; margin-bottom: 6px; padding-bottom: 15px; width: 400px;">
+            </td>
+        </tr>
+    </table>
+    <section>
+        <div class="texto-direita-topo"> 
+        Rua da Olaria,3ºpiso</br>
+        Tel: (21)98811-2244</br>
+       <a href="contato@refrescape.com.br">
+            contato@refrescape.com.br</a>
+        </div>
+    </section>
+    <section>
+        <nav font-family: Karla ; margin-top: 50px; color:  #332277; line-height: 230% margin-top: 40px; font-size: 16px;>
+        <ul type="square">
+            <div class="texto.direta-topo excecao2">
+                <li><a href="RefrecaPePisoFrio.html">Apresentação</a></li>
+                <li><a href="Porcelanatos.html">Porcelanatos</a></li>
+                <li><a href="Complementos.html">Complementos</a></li>
+                <li><a href="Pedidos.html">Pedidos</a></li>
+            </ul>
+            </div>
+        </nav>
+    </section>
+    <section> 
+<h2 id="titulo">Complementos</h2>
+<div class="quadrado">
+    <ol>
+        <li>Espaçador:</li>
+        <ul type="square">
+            <li><a href="javascript:MostraProduto('Standers')">Standers 2mm</a></li>
+        </ul>
+        <li>Argamassa:</li>
+        <ul type="square">
+            <li><a href="javascript:MostraProduto('Axtonbr')">Axton Branca</a></li>
+        </ul> 
+        <li>Rejunte:</li>  
+        <ul type="square">
+            <li><a  href="javascript:MostraProduto('Axton')">Axton Marfim</a></li>
+        </ul>
+        <li>Rodapé:</li>
+        <ul type="square">
+            <li><a  href="javascript:MostraProduto('Moldura')">Moldufarma MDF Nogueira</a></li>
+            <li><a  href="javascript:MostraProduto('Poliestireno')">Santa Luzia Poliestireno</a></li>
+        </ul>
+        <li>Cola para Moldura:</li>
+        <ul type="square">
+            <li><a  href="javascript:MostraProduto('Cola')">Santa Luzia</a></li>
+        </ul>
+    </ol>
+</div>
+<div id="caixa" class="caixa">
+    <div class="caixa-content">
+        <h1 id="caixa-titulo"></h1>
+        <p class="letra" id="caixa-descricao"></p>
+        <img id="caixa-imagem" class="caixa-img" src="" alt="Imagem do produto">
+        <p class="letra" id="caixa-quantidade"></p>
+        <p class="letra" id="caixa-preco"></p>
+        <button id="fechar-caixa">Fechar</button>
+    </div>
+</div>
+
+</div>
+</section>
+        <script src="Complementos.js"></script>
+</body>
+</html>
