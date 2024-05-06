@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RefrescaPePisoFrio</title>
+    <style>
+        .FormBox {
+            width: 540px;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+            color: #000000;
+            background-color: #EEDDCC;
+            border: 3px solid #000055;
+            font-size: 15px;
+            font-family: Karla, Verdana, Ubuntu;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input {
+            border-radius: 9px black;
+        }
+
+        .FSLinhaInteira {
+            width: 94%;
+            text-align: left;
+        }
+
+        .FSLinha {
+            width: 96%;
+            display: block;
+            margin: 0;
+        }
+
+        .FSEsq {
+            display: inline;
+            margin: 0;
+            float: left;
+        }
+
+        .FSDir {
+            display: inline;
+            margin: 0;
+            float: right;
+        }
+
+        .LinhaForm {
+            margin: 0;
+            height: 30px;
+            padding: 6px 3px 0px 3px;
+        }
+
+        .colPerc25 {
+            padding-top: 10px;
+            float: left;
+            height: 30px;
+            width: 25%;
+        }
+
+        .colPerc40 {
+            padding-top: 10px;
+            float: right;
+            height: 30px;
+            width: 40%;
+        }
+
+        .colPerc50 {
+            padding-top: 10px;
+            float: left;
+            vertical-align: middle;
+            height: 30px;
+            width: 50%;
+        }
+
+        .colPerc60 {
+            padding-top: 10px;
+            float: left;
+            height: 30px;
+            width: 60%;
+        }
+
+        .selecPerc100Cel {
+            width: 100%;
+        }
+
+        .elemPosDir {
+            float: right;
+        }
+
+        .elemPosDirbtn {
+            float: right;
+            margin-top: 19px;
+        }
+
+        .elemPosEsq {
+            float: left;
+        }
+
+        .botoes {
+            text-align: right;
+            margin: 20px 10px 0px 10px;
+            text-decoration: none;
+        }
+
+        .InpBoxMed {
+            width: 80px;
+        }
+
+        .numDD {
+            width: 25px;
+        }
+
+        #boxPedidos {
+            height: 100px;
+            width: 495px;
+            margin-top: 20px;
+        }
+
+        #lisPedArea {
+            height: 90%;
+            width: 100%;
+        }
+
+        ul {
+            line-height: 200%;
+        }
+
+        .texto-direita-topo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: 140%;
+            text-align: right;
+            font: size 14px;
+            font-family: Karla;
+            width: 300px;
+            border: 1px solid #BBAA99;
+            float: right;
+        }
+
+        .excecao1 {
+            text-align: center;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            font: size 16px;
+            ;
+            font-family: stoke
+        }
+
+        body {
+            color: #7711CC;
+            background-color: #BBAA99;
+        }
+
+        .continuar {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        #dov {
+            height: 30vh;
+            margin-left: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .arrow {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body vlink="#8822DD" link="#7711CC">
+    <section>
+        <h1><img src="RefrescaPeTopo.png" alt="RefrescaPeTopo" width="410" height="60">
+        </h1>
+    </section>
+    <table style="border-collapse: collapse;">
+        <tr>
+            <td style="border-bottom: 3px solid #402020; margin-bottom: 6px; padding-bottom: 15px; width: 400px;">
+            </td>
+        </tr>
+    </table>
+    <section>
+        <div class="texto-direita-topo">
+            Rua da Olaria,3ºpiso</br>
+            Tel: (21)98811-2244</br>
+            <a href="contato@refrescape.com.br" class="link">
+                contato@refrescape.com.br</a>
+        </div>
+    </section>
+    <section>
+        <nav font-family: Karla ; margin-top: 50px; color: #332277; line-height: 230% margin-top: 40px; font-size:
+            16px;>
+            <ul type="square">
+                <div class="texto.direta-topo excecao2">
+                    <li><a href="RefrecaPePisoFrio.html" class="link">Apresentação</a></li>
+                    <li><a href="Porcelanatos.html" class="link">Porcelanatos</a></li>
+                    <li><a href="Complementos.html" class="link">Complementos</a></li>
+                    <li><a href="Pedidos.html" class="link">Pedidos</a></li>
+            </ul>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <form class="FormBox" method="get">
+            <fieldset class="FSLinhaInteira">
+                <legend>Seleção de Produtos</legend>
+
+                <fieldset class="FSLinhaInteira">
+                    <legend>Pisos e Rodapés</legend>
+
+                    <div class="LinhaForm">
+                        <label for="PisoseRodapés" class="selecPerc100Cel"></label>
+                        <select required id="PisoseRodapés" name="PisoseRodapés">
+                            <option value="1">-----</option>
+                            <optgroup label="Porcelanato">
+                                <option value="Cimentício">Cimentício Bege Portinari</option>
+                                <option value="Decorado">Decorado Fiori Di Lotus Biancogres</option>
+                                <option value="Marmorizado">Marmorizado Beige Lux Biancogres</option>
+                                <option value="Amadeirado">Amadeirado Nogueira Eliane</option>
+                            </optgroup>
+                            <optgroup label="Rodapés">
+                                <option value="LEV">LEV 102 Branco Santa Luzia</option>
+                                <option value="Mdf">Mdf Moldufama 1002 Nogueira</option>
+                            </optgroup>
+                        </select>
+                        <span id="areaLabel" class="metros" for="metros1">Área:</span>
+                        <input type="text" name="metros" id="metros1" class="numDD">
+                        <span class="arrow">&rArr;</span>
+                        <input type="text" name="caixas" id="caixas1" class="numDD">
+                        <span id="caixasLabel" class="caixas">Caixas</span>
+                    </div>
+
+                    <div class="LinhaForm">
+                        <span class="elemPosEsq">
+                            <label for="Txtparcial1"><br />Total Parcial: R&#36;
+                                <input type="text" name="Txtparcial1" id="Txtparcial1" class="InpBoxMed">
+                            </label>
+                        </span>
+                        <span class="elemPosDirbtn">
+                            <input type="button" value="Incluir Produtos">
+                        </span>
+                    </div>
+                </fieldset>
+
+                <fieldset class="FSLinhaInteira">
+                    <legend>Complementos</legend>
+                    <div class="LinhaForm">
+                        <label for="Complementos"></label>
+                        <select required id="Complementos" name="Complementos">
+                            <option value="1">-----</option>
+                            <option value="2">Espaçador 2mm 300 peças Standers</option>
+                            <option value="3">Argamassa Branca 20Kg Axton</option>
+                            <option value="4">Rejunte Marfim 1 Kg Axton</option>
+                            <option value="5">Cola para Moldura 400g Santa Luzia</option>
+                        </select>
+                        <span class="elemPosDir">
+                            <label class="LabBoxQtd" for="QtdMaq">Quantidade: </label>
+                            <input type="text" name="QtdMaq" id="QtdMaq" class="numDD">
+                        </span>
+                    </div>
+                    <span class="elemPosDirbtn">
+                        <input type="button" value="Incluir Produtos">
+                    </span>
+                    <span class="elemPosEsq">
+                        <label for="Txtparcial2"><br />Total Parcial: R&#36;
+                            <input type="text" name="Txtparcial2" id="Txtparcial2" class="InpBoxMed"></label>
+                    </span>
+                </fieldset>
+                <div class="LinhaForm" id="boxPedidos">
+                    <textarea name="listaPedidos" id="lisPedArea">
+                </textarea>
+                </div>
+                <label for="TxtTotal"><br />Valor Total R$
+                    <input type="text" name="TxtTotal" id="TxtTotal" class="InpBoxMed"></label>
+            </fieldset>
+            <div class="botoes">
+                <button><a href="Pedidospt2.html" class="continuar">Continuar</a></button>
+                <input type="reset" value="Limpar" />
+            </div>
+        </form>
+        </div>
+    </section>
+    <script src="Pedidos.js"></script>
+</body>
+
+</html>
